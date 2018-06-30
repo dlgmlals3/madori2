@@ -1,0 +1,24 @@
+<ion-tabs tabsPlacement="top">
+    <ion-tab [root]="myRoomTab" tabTitle="myRoomTab" tabIcon="room"></ion-tab>
+    <ion-tab [root]="providerListTab" tabTitle="providerListTab" tabIcon="list"></ion-tab>
+    <ion-tab [root]="requestedRoomListTab" tabTitle="requestedRoomListTab" tabIcon="list"></ion-tab>
+  </ion-tabs>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+        <ion-item>
+            <ion-label color="primary">검색어</ion-label>
+            <ion-input placeholder="Put keyword here..."></ion-input>
+        </ion-item>
+    </ion-col>
+    <ion-col>
+        <button ion-button round outline>검색</button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+
+
+

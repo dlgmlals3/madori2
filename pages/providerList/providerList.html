@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     GNJ!! 가치놀 친구들
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list-header>providerList Page</ion-list-header>
+
+  <ion-list>    
+    <ion-item *ngFor="let provider of providerList">
+        <h2>{{provider.providerName}}</h2>
+        <p class="item-description">{{provider.roomName}}</p>
+    </ion-item>
+</ion-list>
+<button ion-button round outline (click)="getProviderList()">+</button>
+  
+</ion-content>
