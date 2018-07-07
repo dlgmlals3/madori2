@@ -8,11 +8,16 @@ import { NavController } from 'ionic-angular';
 })
 export class MyRoomPage {
 
+  
 
   constructor() {
 	
   }
 
-    
+  showCalendar(){
+
+   
+
+  }
 
 }

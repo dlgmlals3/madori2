@@ -8,14 +8,61 @@
 
 <ion-content>
   
-  <ion-list-header>myRoom Page</ion-list-header>
+  <ion-item>
+    <ion-label color="primary">장소명</ion-label>
+    <ion-input placeholder="장소명을 입력하세요"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">인원</ion-label>
+    <ion-input type="number" placeholder="인원을 입력하세요"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>시간(월-일 시간 분 AM/PM)</ion-label>
+    <ion-datetime displayFormat="YYYY-MM-DD h:mm A" pickerFormat="YYYY-MM-DD h mm A" [(ngModel)]="today"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>지역</ion-label>
+    <ion-select [(ngModel)]="region">
+      <ion-option value="100">강남</ion-option>
+      <ion-option value="110">홍대</ion-option>
+      <ion-option value="120">이태원</ion-option>
+      <ion-option value="130">건대</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>성별</ion-label>
+    <ion-select [(ngModel)]="gender">
+      <ion-option value="M">남성</ion-option>
+      <ion-option value="W">여성</ion-option>      
+    </ion-select>
+  </ion-item>
   
-      <!-- <ion-item>
-        <ion-label color="primary">검색어</ion-label>
-        <ion-input placeholder="Put keyword here..."></ion-input>
-      </ion-item>
-    
-       <ion-item>
+  <ion-item>
+    <ion-label color="primary">가격</ion-label>
+    <ion-input placeholder="가격을 입력하세요"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary">오픈채팅주소</ion-label>
+    <ion-input placeholder="오픈채팅주소를 입력하세요"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label color="primary">소개</ion-label>
+      <ion-textarea placeholder="소개를 입력하세요"></ion-textarea>
+    </ion-item> 
+
+    <ion-item>
+        <ion-label color="primary">신청자 목록</ion-label>
+        <ion-textarea placeholder=""></ion-textarea>
+      </ion-item> 
+
+    <!--
+     <ion-item>
         <ion-label color="primary" fixed>Fixed Label</ion-label>
         <ion-input type="tel" placeholder="Tel Input"></ion-input>
       </ion-item>
@@ -45,9 +92,6 @@
     
       <ion-item>
         <ion-textarea placeholder="Enter a description"></ion-textarea>
-      </ion-item> -->
-      
-
-  
-  
+      </ion-item> 
+    -->
 </ion-content>
